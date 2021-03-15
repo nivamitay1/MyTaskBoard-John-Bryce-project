@@ -1,0 +1,132 @@
+#title_image {
+  margin: 25px auto 18px auto;
+  display: flex;
+}
+
+body {
+  background-image: url("tile.jpg");
+}
+
+#form {
+  margin-left: 21%;
+  background-image: url(formbg.jpg);
+  font-family: cursive;
+  max-width: 750px;
+}
+
+#task {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0px;
+  font-weight: 400;
+  padding-left: 80px;
+  padding-top: 20px;
+  font-size: 20px;
+  width: 90%;
+  background-image: url(formbg.jpg);
+}
+
+#date {
+  background-color: transparent;
+  border: 0px;
+  font-weight: 400;
+  padding-left: 30px;
+  margin: 0px;
+  padding-top: 25px;
+  font-size: 20px;
+  top: 10%;
+}
+
+#hour {
+  background-color: transparent;
+  border: 0px;
+  font-weight: 400;
+  padding-left: 30px;
+  margin: 0px;
+  padding-top: 8px;
+  font-size: 20px;
+  top: 10%;
+}
+
+#clear-btn {
+  left: 75%;
+  margin-bottom: 1%;
+}
+
+#save-btn {
+  margin-left: 60%;
+  margin-bottom: 1%;
+}
+
+.task {
+  background-image: url(notebg.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 220px;
+  width: 200px;
+  background-repeat: no-repeat;
+  color: black;
+  padding-right: 20px;
+  margin-top: 20px;
+  font-family: cursive;
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+.fas {
+  position: relative;
+
+  top: 6px;
+  display: none;
+  cursor: pointer;
+}
+
+.task:hover .fas {
+  display: inline;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.paragraph-task {
+  word-wrap: break-word;
+  max-width: 280px;
+  margin: 20px 3px 3px;
+  overflow-y: auto;
+  max-height: 105px;
+  font-size: 18px;
+}
+
+#do-date {
+  margin-left: 13%;
+}
+
+#removeBtn {
+  position: relative;
+
+  top: 6px;
+  display: none;
+  cursor: pointer;
+}
+
+.task:hover #removeBtn {
+  display: inline;
+}
+
+#buttoms {
+  margin-top: 5%;
+}

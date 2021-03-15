@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="firstproject.css">
+    <script src="https://kit.fontawesome.com/12866d3651.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>To do list</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="title.png" id="title_image">
+            </div>
+        </div>
+
+        <main>
+            <div class="row g-0">
+                <div class="col-10">
+                    <form id="form">
+                        <div class="col">
+                            <textarea id="task" placeholder="Write the Task you want to accomplish"></textarea>
+                        </div>
+                        <div class="col" id="do-date">
+                            <label><strong> Do Date :</strong></label>
+                            <input type=date id="date"></input>
+                            <br>
+                            <label><strong> Do Hour :</strong></label>
+                            <input type="time" id="hour">
+                        </div>
+                        <footer>
+                        <div class="col" id="buttoms">
+                            <button type="button" class="btn btn-success" onclick=" checkValid()" onclick=" cleanForm()"
+                                id="save-btn">Save</button>
+                            <button type="button" class="btn btn-warning" onclick="cleanForm()"
+                                id="clear-btn">clear</button>
+                        </div>
+                    </footer>
+                    </form>
+                </div>
+
+            </div>
+
+        </main>
+        <div class="row" id="task-container">
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="firstproject.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
